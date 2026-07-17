@@ -12,16 +12,25 @@ The two minute version. The system runs six domains of work (a job search,
 business consulting for managed services providers, service offering
 design, technical advisory, device management, and this publication) from
 one private repository, each domain under its own doctrine, all conforming
-to one seven-part frame. Every answer passes a risk-tiered verification
-gate, and high-stakes work gets the full adversarial stack. Every open
-decision sits in a queue until the human rules. Every human correction
-becomes a standing mechanism, logged in a register that pairs each catch
-with the rule it produced and exposes repeat failures; the monthly
-scorecard tracks where flaws get caught. And the whole
-thing grades itself monthly on five numbers, starting from an honestly
-embarrassing baseline. On day one, the human caught flaws before the AI's
-own reviews did, twice. The system published that number and built the
-machinery to invert it.
+to one seven-part frame. Every substantive answer passes a risk-tiered
+verification gate, and high-stakes work gets the full adversarial stack.
+Every substantive build opens with the plan and the criteria it will be
+judged by, agreed before the work starts. Every open decision sits in a
+queue until the human rules.
+
+Every human correction becomes a standing mechanism, logged in a register
+that pairs each catch with the rule it produced and exposes repeat
+failures; a rule that fails twice as memory gets pushed down to the tool
+layer as a mechanical guard that cannot forget. The register grew from 21
+rows to 28 in the four days since first publication, and the newest row is
+the first found by a routine machine pass in ordinary operation rather
+than by the human.
+
+And the whole thing grades itself on five numbers a month, starting from
+an honestly embarrassing baseline; the first monthly reading comes due in
+August 2026 and publishes either way. On day one, the human caught flaws
+before the AI's own reviews did, twice. The system published that number
+and built the machinery to invert it.
 
 It recently proved itself on real work. Given a compliance tracker for a
 second opinion, it verified every control weight against the official
@@ -75,6 +84,14 @@ CC BY 4.0, the templates are MIT. The system's own stated limit applies to
 everything here. One model wearing all the hats is not independent review,
 which is why the design leans on primary sources, human ratification, and
 a cross-vendor audit protocol, and why the failures publish alongside the
-wins.
+wins. One more scope note: the prior-art survey, the starter kit, and the
+published trends can be checked right here; the register, the audit
+records, and the git history that back the other claims live in the
+private repository, and they are available as a live walkthrough rather
+than a download.
+
+This page is the two minute rendition of the thesis, derived from version
+2, 2026-07-16.
 
 Jason Lopez
+[linkedin.com/in/jaylpz](https://www.linkedin.com/in/jaylpz)

@@ -4,18 +4,18 @@
 
 Jason Lopez
 
-Version 1, drafted 2026-07-12. This is a living document. It stages in a
-private repository and publishes from a public one after a privacy review.
-Nothing here names a client, a colleague, or a price. Examples are drawn
-from real, recorded events and presented as a demonstration environment,
-parties fictionalized and identifying figures rounded. The package was
-red-teamed for re-identification by a cross-vendor auditor with access to
-the private records, and the residual risk is stated plainly rather than
-warranted away. People who participated in the underlying events may
-recognize their own stories; readers of the public material alone should
-not be able to trace any example to a real person or organization. Claims
-in this
-document are the author's judgment unless a source is cited.
+Version 2, revised 2026-07-16. First drafted 2026-07-12. This is a living
+document. It stages in a private repository and publishes from a public one
+after a privacy review. Nothing here names a client, a colleague, or a
+price. Examples are drawn from real, recorded events and presented as a
+demonstration environment, parties fictionalized and identifying figures
+rounded. The package was red-teamed for re-identification by a cross-vendor
+auditor with access to the private records, and the residual risk is stated
+plainly rather than warranted away. People who participated in the
+underlying events may recognize their own stories; readers of the public
+material alone should not be able to trace any example to a real person or
+organization. Claims in this document are the author's judgment unless a
+source is cited.
 
 **The two minute version.** I spent nearly two decades running security operations
 and incident response, and now I run an AI the same way, as a governed
@@ -24,7 +24,11 @@ instead of a chat window. It recently caught a scoring defect affecting roughly 
 of a compliance tracker, by checking every value against the official
 government source. Its first honest metric published at human two, machine zero,
 meaning I caught flaws before the AI's own reviews did, and the whole design
-exists to invert that number. The rest of this document is how, what broke
+exists to invert that number. In the four days since first publication the
+register of corrections has grown from 21 rows to 28, and the newest row is
+the first found by a routine machine pass in ordinary operation, not by me
+and not by a commissioned review. The rest of this
+document is how, what broke
 along the way, and when each piece scales. The parts are all public ideas.
 The assembly is the contribution.
 
@@ -80,7 +84,7 @@ frameworks, service offerings, pricing models, buyer personas; and
 tactical project plans for compliance, control trackers, remediation
 sequencing, evidence planning. The seven parts of the skeleton,
 described in the next section, do not care whether the deliverable is a
-hardening policy or a pricing sheet, and that indifference is the point.
+hardening policy or a pricing sheet, and that indifference is deliberate.
 One operating model, any domain of work.
 
 And the model is not limited to what it has already produced. With the
@@ -120,7 +124,7 @@ have, installer identities are verified against live sources before they
 enter the manifest, and a systems check runs before tool-dependent work
 begins on any machine. Every device's record carries a dated stamp of how
 current it is against the standard, so configuration drift gets caught by
-machinery instead of by memory, which is the same reason fleet management
+machinery instead of by memory, for the same reason fleet management
 exists in any well-run environment.
 
 Here is how a single ask flows through it.
@@ -186,7 +190,22 @@ each workspace, and deviations must be named out loud. And when the skeleton
 itself changes, a propagation registry tracks the amendment out to every
 existing workspace, each one either updated or recorded as already covered
 with the reason, so an improvement to the frame never strands the older
-workspaces on an older version of it. A workspace with no
+workspaces on an older version of it.
+
+Propagation has since matured from proposal to automation. When a change is
+mechanical, an inherited behavior, a pointer, an edit that preserves
+meaning, it is applied everywhere it belongs in the same session,
+automatically. Anything that would alter what a workspace's own ratified
+rules mean still stops and waits for my decision. The mechanical layer got
+automated and the judgment layer stayed human, which is the design idea of
+the whole system expressed in one mechanism. The vocabulary matured with
+it. When I say "make that a rule," the phrase now carries a whole protocol.
+The rule is assessed at every layer, the shared skeleton, the always-loaded
+global rules, each workspace, and the per-device memory, and applied
+wherever it fits in that layer's own form. A layer where it does not fit
+gets a recorded verdict with a reason, never a silent skip.
+
+A workspace with no
 pricing says "no pricing ledger here, and here is why" instead of silently
 omitting it. The rule that made that stick is one of my favorites in the
 system. The word "partially" is never allowed to pass silently. If coverage
@@ -199,8 +218,8 @@ I spent years building security programs on the assumption that any single
 control will eventually fail. The same assumption runs this system. Seven
 safeguards of different kinds, preventive, detective, and approval,
 designed so that no single failure is silent. They are not a strict
-cascade, and counting them is not the point; the point is that no single
-safeguard is trusted alone. A control dependency matrix mapping their
+cascade, and counting them is not what matters; what matters is that no
+single safeguard is trusted alone. A control dependency matrix mapping their
 overlaps and shared failure modes is being built in the private repository,
 and stronger assurance claims wait for it.
 
@@ -244,8 +263,8 @@ convergence, it is erosion. The output is always a decision menu for me,
 never something that executes itself. And when I ratify changes that came
 out of an exchange, one model implements and the other audits the diffs
 against exactly what was agreed. The implementer never audits its own
-work, which is the same separation of duties any auditor would demand of
-a human change-control process.
+work, a separation of duties any auditor would recognize from human
+change control.
 
 This is not theory. The protocol has run a full multi-round exchange with
 a second vendor's model, ending in a ratified decision set, an
@@ -273,6 +292,60 @@ The AI now attacks its own proposals with the same questions I would have
 asked, before I ever see them. My attention became the backstop instead of
 the mechanism.
 
+Since the first version of this document, the governance job has grown a
+front end and a back end. The front end is a standing gate. Any
+substantive piece of work now opens with the plan and the validation
+criteria, meaning how both of us will know the output is right, agreed
+before anything is built, and closeout reconciles the delivery against
+those criteria. Agreement on how the output will be judged turns out to be
+worth more than agreement on the plan text itself, because it is the thing
+closeout can actually be measured against. The gate came with a design
+rule I insisted on. An always-on protection announces when it is active
+and carries a one-phrase override scoped to the single request, because a
+gate that cannot be waived gets worked around instead of used. The back
+end is an ask ledger. Every initiative itemizes the original ask at
+intake, logs additions as they land, and reconciles the delivery against
+both at closeout. That turned "does this still meet what I asked for"
+from a question I have to remember to ask into a table that answers it.
+
+The register also taught me what a repeat means. One rule, born from a
+catch about a bulk command sweeping a parallel session's work into an
+unrelated change set, failed again the very next day. The lesson is that a
+repeat is a layer problem, not a wording problem. A rule that lives only
+in a register does not change tool habits. So the control was pushed down
+the stack, first into the memory layer that loads on every session, and
+when even that left a gap, into the tool layer itself, a pre-execution
+hook that mechanically blocks the risky command class on every machine I
+work from. That rule can no longer fail by being forgotten, because it is
+no longer remembered. It is enforced. The ladder is worth naming plainly.
+A rule in a register is documentation. A rule in the instructions that
+load on every session is memory. A rule in a pre-execution hook is
+machinery. A repeat catch moves the control one rung down, which is
+defense in depth applied to my own habits.
+
+Another distinction I only learned by tripping on it. A per-session
+decision queue and a cross-session register are different controls, and
+having the first does not give you the second. Open items had come to
+live in five different places, and nothing consolidated them across
+sessions, so I had to ask "what am I missing," which is itself the signal
+that a mechanism is owed. Each working domain now carries one consolidated
+register of everything outstanding, swept at the start of every session.
+Decisions that survive their session land in it, and finished items drop
+off. The queue keeps a single conversation honest. The register keeps the
+weeks honest.
+
+Even the way answers are formatted turned out to be governable, and that
+doctrine was born one catch at a time. I kept losing content in dense
+paragraphs, so structured output became a rule. A ready-to-send reply once
+shipped buried inside commentary, so now any text I am expected to send
+onward sits alone in a copy-ready block. Substantive analyses open with
+the verdict and close with my exact next action, because an answer is
+finished when the reader's next move is already in their hand. And the
+enumerated formatting rules eventually matured into a single test,
+grammatically correct for the context and never reading as
+machine-written, which covers the cases nobody enumerated. Doctrine that
+starts as a list of cases and matures into a test is doctrine that scales.
+
 That pattern, correction becomes procedure, is the entire growth engine of
 the system. It is also, I would argue, the actual skill this document
 showcases. Anyone can ask a model for output. Operating one means building
@@ -290,14 +363,16 @@ this draft. The system runs on
 mechanisms rather than memory, on rituals, registries, queues, and
 promotion rules.
 That grade is self assessed and provisional; the outside review described
-at the end of this document has since run and tested it, the thresholds,
+at the end of this document has since run, and its findings are folded
+into this text and the revision history. The thresholds,
 denominators, and promotion criteria get defined at the first monthly
 reading, and all of it publishes either way. Level four is
 measured, and level five is optimizing, where the numbers drive the
 changes.
 
-The measurement is deliberately small. Five numbers, recorded once a month
-in ten minutes. The rework rate on shipped deliverables. The catch layer,
+The measurement is deliberately small. Five numbers, to be recorded once a
+month in ten minutes; the first monthly reading comes due at the start of
+August 2026 and publishes either way. The rework rate on shipped deliverables. The catch layer,
 meaning who finds flaws first, the AI's own passes or me. Coverage debt,
 rules that have not reached every place they should apply. The size of the
 always-loaded context, which should stay flat while capability grows,
@@ -309,7 +384,17 @@ embarrassing and that is the point. On day one the score was human two,
 machine zero. I caught two flaws before the AI's own reviews did. By that
 same evening the audit layers had caught the next three themselves, so the
 number was already moving; the monthly scorecard will show whether it stays
-inverted. The system recorded the baseline honestly, built the mechanism
+inverted. In the four days between the first version of this document and
+this one, the register of corrections grew from 21 rows to 28. Two of the seven new rows
+were repeats of existing rules, which the register treats as mechanism
+failures and answers by strengthening the layer, not the wording; one of
+those strengthenings ended as the mechanical tool-layer hook described
+earlier. And one row is a first. A coverage miss was caught by the
+system's own session-start pass in the course of ordinary operation,
+before I saw it and before any commissioned review looked. One row does
+not invert a trend, but it is the first data point on the side of the
+ledger this whole design exists to grow. The system recorded the baseline
+honestly, built the mechanism
 that should invert it, and will publish the trend. A system that documents its own failure modes
 is more credible than one that claims reliability, in AI exactly as in
 security.
@@ -349,11 +434,15 @@ successes did.
 The moving-target rule described earlier, plus a second coverage gap the
 same day, are the two flaws behind the human two, machine zero baseline.
 Context-isolated audit agents, same model but fresh context with no view
-of the sessions that produced the work, caught the next three that same
-evening, a half registered workspace, an undercounted
+of the sessions that produced the work, in practice a separate agent
+session handed only the artifact and a brief, caught the next three that
+same evening, a half registered workspace, an undercounted
 output figure in notes meant for publication, and a wording bug in the
 standard itself, which is the layered model starting to earn its keep. Each
-finding is now a named failure mode the next review checks for.
+finding is now a named failure mode the next review checks for. The
+repeat failures came later and taught the layer lesson told in section 6:
+a rule that repeats did not fail because it was worded badly, it failed
+because it lived at a layer that could forget it.
 
 I broke things too. I missed decisions buried in prose. I forgot context
 between sessions and asked for things that already existed. I threw three
@@ -404,7 +493,8 @@ context with the session that produced the work, which is the same
 fresh-eyes rule I would apply to any human review. The trigger for
 spawning an agent is simple. If the task can be fully described in one
 brief, does not need my judgment mid-flight, and benefits from fresh eyes
-or parallelism, it becomes an agent.
+or parallelism, it becomes an agent. The isolation itself is cheap. A
+fresh agent gets the artifact and the brief and nothing else.
 
 Connectors and MCP servers come next. Today the system reads my business
 systems live but read-only, through existing connectors, and that is
@@ -444,15 +534,15 @@ into the system, a client portal or a team dashboard. Multi-user is the
 real threshold there, because the moment a second human depends on the
 system, the ratification model and the audit trail have to serve them too.
 
-The measurement rhythm runs monthly and the trend will be public in future
-revisions of this document. And before this version published, the system itself went through a
+The measurement rhythm is monthly and the trend will be public in future
+revisions of this document. And before the first version published, the system itself went through a
 three-round adversarial review by a different vendor's model under the
 containment protocol, so the claims here carry a genuinely independent
 check; its findings are folded into this text and recorded in the revision
 history.
 
-This is version one, written the same day the system was provisionally
-assessed at managed maturity. The prior-art survey ships with this package; revisions will
+This document began the same day the system was provisionally
+assessed at managed maturity. The prior-art survey ships with this package; revisions
 carry the scorecard trends and whatever the outside audit finds. If the numbers embarrass me, they
 publish anyway. That is the standard the whole system runs on, and it is
 the same standard I have carried through every security program I have
@@ -482,8 +572,9 @@ ruling is resolved. Public examples use a fictionalized demonstration
 environment with rounded figures, and the real events stay recorded in the
 private repository. Also added the same night per the author, an examples
 companion, one fictionalized vignette per domain, so every workspace
-demonstrates rather than just describes; the author's positioning reframe
-(advisor to managed services businesses, not operator of one); and two
+demonstrates rather than just describes; the author's positioning
+corrected to state the actual relationship (advisor to managed services
+businesses, not operator of one); and two
 sections the author caught missing, the device and tooling standard and
 the multi-AI collaboration protocol with its author-auditor separation.
 That completeness catch also became a standing rubric rule, every draft is
@@ -499,3 +590,30 @@ cross-vendor containment audit ran to completion: two privacy blockers and
 a set of overclaim corrections were raised, and every finding was resolved
 or explicitly ruled by the author in this text. Planned for future
 revisions are the scorecard trends from the monthly ritual.
+
+Version 2, 2026-07-16. First revision cycle since publication, run through
+the same pipeline the document describes: capture sweep of the private
+inbox, staged drafts, a re-run of the four-persona cold read because a
+material revision is a new draft, the privacy scrub as a named pass, and
+the author's approval of the exact text before anything moved. What
+changed. Section 3's propagation story updated from propose-at-next-touch
+to automatic propagation with the meaning-preserving versus
+meaning-altering split, plus the full-stack meaning the phrase "make that
+a rule" now carries. Section 6 gained four mechanisms born since first
+publication: the plan-first gate with validation criteria agreed before
+the build and its scoped one-phrase override; the ask ledger that
+reconciles delivery against the original ask; the repeat-catch layer
+lesson that ended with a remembered rule rebuilt as a mechanical
+tool-layer guard; and the distinction between a per-session decision queue
+and a cross-session register of open items. It also gained the
+communication doctrine that matured from enumerated formatting rules into
+a single test. Section 7 records the register's growth from 21 rows to 28
+and the first catch found by the machine's own routine pass rather than
+by the author. The examples companion gained a designed-elicitation and
+recompute-from-source vignette in the offerings domain and the tool-layer
+guard in the device domain, and every rendition now states which revision
+of this document it derives from. The re-run panel raised no blockers and
+its ranked fixes were applied before approval, a metric-window mismatch
+between renditions and the wording of the first machine-found catch among
+them. Why this revision exists: the system moved, and the standing rule is
+that this document is not allowed to drift from it.

@@ -1,6 +1,7 @@
 # The system at work: one example per domain
 
-Companion to "Operating an AI." Jason Lopez. Version 1, 2026-07-12.
+Companion to "Operating an AI." Jason Lopez. Version 2, 2026-07-16,
+derived from thesis version 2.
 
 Same convention as the thesis. These are real, recorded events presented as
 a demonstration environment. Parties are fictionalized, identifying figures
@@ -49,6 +50,20 @@ document leaves the building it passes a pre-flight check, and if any input
 is still an estimate, the document stays internal until the real number
 exists. A number has a date and a source, or it does not ship.
 
+The monthly billing run shows the same discipline from another angle.
+Rates live in a configuration with two declared sides, what the engineers
+cost and what the customers are billed, and every rate carries a status,
+actual or needed. A needed rate is never invented. It renders as a flagged
+cell and a numbered question, and each answer is recorded with who gave it
+and when, so the same question never has to be asked twice and the
+question list shrinks month over month. Asking the human is a designed
+workflow here, not a failure mode. And when I asked whether the math was
+right, the system did not re-read its own workbook. It recomputed every
+figure from the raw source data with the rules applied from scratch,
+scanned for duplicate entries, and only then said yes, with the remaining
+risks named, including the one thing no recomputation can see, hours that
+were never logged at all.
+
 ## The advisor workspace
 
 Technical questions pass through a tiered gate before the answer reaches
@@ -73,7 +88,15 @@ record. The recorded machines were reconciled to the same declared
 standard, and any new device is intended to walk the same check to the
 same declared state, however many there are, because the standard is
 written for the fleet and not for the devices that happened to exist
-first. No human memory is involved in keeping any of it true.
+first. Keeping it all true no longer depends on anyone remembering.
+
+The newest control in this domain was not born here. A rule about keeping
+each change set scoped to its own work failed twice as a remembered rule,
+so it was rebuilt as a pre-execution hook that mechanically blocks the
+risky command class before it runs, and the canonical copy lives in the
+device standard, so every machine inherits the guard the same way it
+inherits the settings file. A control that graduated from memory to
+machinery is exactly what this workspace exists to distribute.
 
 ## The publication workspace
 
@@ -86,7 +109,8 @@ hour. A materially edited draft is a new draft, and no draft reaches the
 human without a context-isolated cold-read panel. That panel has since caught a
 count error, a metric inconsistency, and a privacy soft spot before any of
 them reached the public. The document you are reading was audited by
-machinery that does not care that it is describing itself.
+machinery that does not care that it is describing itself, and the
+revision you are reading walked back through that same gate.
 
 ## The thread through all six
 
