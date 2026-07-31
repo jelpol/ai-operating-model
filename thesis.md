@@ -4,14 +4,16 @@
 
 Jason Lopez
 
-Version 2, revised 2026-07-16. First drafted 2026-07-12. This is a living
+Version 3, revised 2026-07-30. First drafted 2026-07-12; version 2
+published 2026-07-16. This is a living
 document. It stages in a private repository and publishes from a public one
 after a privacy review. Nothing here names a client, a colleague, or a
 price. Examples are drawn from real, recorded events and presented as a
 demonstration environment, parties fictionalized and identifying figures
 rounded. The package was red-teamed for re-identification by a cross-vendor
-auditor with access to the private records, and the residual risk is stated
-plainly rather than warranted away. People who participated in the
+auditor with access to the private records through version 2; version 3
+additions passed the staged review gates recorded in the revision history,
+and the residual risk is stated plainly rather than warranted away. People who participated in the
 underlying events may recognize their own stories; readers of the public
 material alone should not be able to trace any example to a real person or
 organization. Claims in this document are the author's judgment unless a
@@ -24,10 +26,10 @@ instead of a chat window. It recently caught a scoring defect affecting roughly 
 of a compliance tracker, by checking every value against the official
 government source. Its first honest metric published at human two, machine zero,
 meaning I caught flaws before the AI's own reviews did, and the whole design
-exists to invert that number. In the four days since first publication the
-register of corrections has grown from 21 rows to 28, and the newest row is
-the first found by a routine machine pass in ordinary operation, not by me
-and not by a commissioned review. The rest of this
+exists to invert that number. Between first publication and the version 2
+revision, four days, the register of corrections grew from 21 rows to 28,
+and the newest row then was the first found by a routine machine pass in
+ordinary operation, not by me and not by a commissioned review. The rest of this
 document is how, what broke
 along the way, and when each piece scales. The parts are all public ideas.
 The assembly is the contribution.
@@ -67,7 +69,7 @@ under the strictest rules in the system, where every resume claim must
 trace to a registered fact with provenance, because a claim that cannot
 survive an interview is worse than no claim. One runs the AI as chief of
 staff for the consulting work I do with those managed services businesses,
-reconciling a living tracker against their live business systems every
+reconciling a living tracker against live business systems every
 session. One builds and prices the service offerings I help them develop,
 where an estimate never reaches a client dressed up as a validated number. One is my
 technical advisor and validation partner, which grades its own answers
@@ -137,7 +139,7 @@ flowchart TD
     D -->|"dropped artifact"| E["Intake protocol<br/>reverse-engineer it, then<br/>six framing questions"]
     D -->|"new initiative"| F["New workspace<br/>born from the 7-part skeleton"]
     D -->|"existing work"| G["workspace doctrine<br/>validate before building"]
-    D -->|"process feedback"| H["persist to doctrine<br/>same session, always"]
+    D -->|"process feedback"| H["persist to doctrine<br/>same session, through<br/>the same ruling"]
     E --> I["Build<br/>lenses + rubric applied<br/>during the work, not after"]
     F --> I
     G --> I
@@ -147,11 +149,29 @@ flowchart TD
     L --> M{"The human rules"}
     M -->|"adjust"| I
     M -->|"approved"| N["Commit + push<br/>the durable record"]
-    H --> N
+    H --> M
     N --> O["Learning loop<br/>lessons routed to their one home ·<br/>improvements promoted into<br/>the skeleton by ratification"]
-    O --> P["Measurement<br/>monthly ritual · five-number<br/>scorecard · maturity level"]
+    O -.->|"skeleton promotions"| M
+    O --> P["Measurement<br/>monthly ritual · pending-marker sweep ·<br/>five-number scorecard · maturity level"]
+    N -.->|"at engagement or<br/>audit closure"| Q["Closure harvest<br/>the whole corpus swept for lessons<br/>nobody named in the moment,<br/>into a ratification register,<br/>every entry ruled before close"]
+    Q -.-> M
     P -.->|"keeps doctrine lean<br/>and current"| C
 ```
+
+Two loops feed doctrine with new lessons, and they are deliberately
+different. The per-ask learning loop catches lessons someone names in
+the moment, and process feedback persists the same way, through the
+same ruling. The closure harvest catches the ones nobody named,
+because the system's capture triggers were all event-driven, and
+section 9 tells what that cost. The harvest also enforces a
+distinction the system had to learn the hard way, though the
+literature has long had names for it, double-loop learning in
+Argyris's terms, institutionalization in maturity-model terms: a
+ruling made inside a piece of work governs that work, and deciding in
+context is not the same as codifying for the future. Graduation to
+doctrine is its own step, through its own register, ruled by the
+human. The measurement edge back into context prunes rather than
+feeds; it keeps what the two loops add lean.
 
 ## 3. The skeleton
 
@@ -255,7 +275,9 @@ debate, the exchange runs under a written containment protocol so that
 outside input cannot drift or quietly rewrite the system. The rules are
 few and hard. The exchange lives in one dedicated working folder, and
 every other file in the repository is read-only input, cited but never
-edited. Turns are sequential and rounds are capped, so a debate cannot
+edited. What an exchange may read is itself a ruling: bringing any
+client-bearing material into an exchange is a disclosure decision I
+make explicitly, on the record, per engagement, never a default. Turns are sequential and rounds are capped, so a debate cannot
 grind forever or wear down a protection through repetition. No compromise
 between models is allowed to weaken an honesty rule or my decision
 authority, because a midpoint that loosens a protection is not
@@ -384,8 +406,9 @@ embarrassing and that is the point. On day one the score was human two,
 machine zero. I caught two flaws before the AI's own reviews did. By that
 same evening the audit layers had caught the next three themselves, so the
 number was already moving; the monthly scorecard will show whether it stays
-inverted. In the four days between the first version of this document and
-this one, the register of corrections grew from 21 rows to 28. Two of the seven new rows
+inverted. In the four days between version 1 and version 2 of this
+document, 2026-07-12 to 2026-07-16, the register of corrections grew
+from 21 rows to 28. Two of the seven new rows
 were repeats of existing rules, which the register treats as mechanism
 failures and answers by strengthening the layer, not the wording; one of
 those strengthenings ended as the mechanical tool-layer hook described
@@ -450,6 +473,46 @@ unrelated asks into one message at eleven at night. The system now assumes
 all of that as normal operating conditions, which is what an operating
 model is for. It is built for the human I am, not the human I intend to be.
 
+The biggest structural failure surfaced late, and it started with a
+feeling rather than an error message. The knowledge graph over the
+repository looked smaller and more connected than it used to, and I asked
+whether cleanup had lost something. The forensic answer, from version
+history, was no: content only ever moved or was superseded, never
+vanished, the handful of deletions all had named destinations, and the
+graph had changed because linking matured and the view hid unlinked
+files. But the investigation it triggered found something better hidden.
+A full sweep of every reusable lesson the system's records had ever
+generated, five hundred and change across state files, working corpora,
+and commit history, a far larger population than the corrections
+register, which holds only human catches converted to rules, showed the
+capture machinery had codified more than four fifths of them, and the
+missing share was not scattered at random. Nearly all of it sat as prose
+in the working files of one substantial piece of client work. The root
+cause was structural. Every capture trigger the system had was
+event-driven, firing on a human correction or on a session that changed a
+mechanism, and a lesson embedded in delivery work product fires neither
+event. Worse, I had ruled on most of those items inside the engagement,
+so they felt ratified to me, while nothing in the system said that an
+in-context ruling and a doctrine-level codification are two different
+acts. The repairs became the system's newest standing parts. A closure
+harvest gate, which is the after-action review any project office would
+recognize, applied at engagement and audit closure: nothing closes until
+its lessons are swept into a register and every entry is ruled. A monthly
+mechanical sweep for proposed, pending, and parked markers, the same
+aging review every quality system runs on its corrective actions, so
+nothing flagged waits invisibly longer than a month. And the two
+ratification layers, the in-context ruling and the doctrine-level
+codification, now named as separate acts in the intake doctrine. One
+residual stated plainly, because the repairs do not cover everything: a
+long-running engagement can still accumulate unmarked debt until its
+closure harvest fires, and bounding that is a next iteration, on the
+record. What the failure bought is a lesson every audit program already
+knows, sharpened by owning it: an event-driven capture system
+accumulates debt exactly where no event fires, and the cure is a
+scheduled sweep that assumes silence is hiding something. The sharp part
+is that I had built the event-driven half and skipped the scheduled
+half, in a system explicitly modeled on defense in depth.
+
 ## 10. Where this sits among what is already public
 
 Before claiming any of this is different, I had the ecosystem scanned in a
@@ -474,6 +537,15 @@ ratification and no implementer audits their own work. That combination is
 the claim this document makes, and the concepts it builds on, context
 engineering, golden paths, defense in depth, judge-model evaluation, are
 established ideas credited in the survey. The assembly is the contribution.
+
+The version 3 mechanisms postdate that scan. Their nearest neighbors are
+named where they appear, after-action reviews for the closure harvest,
+corrective-action aging reviews for the marker sweep, double-loop
+learning and maturity-model institutionalization for the
+ruling-versus-doctrine distinction, and they are claimed, like
+everything else here, only as assembly. A standing note on naming: local
+names in this document are handles, not novelty claims; where a
+mechanism has an established name, the text credits it.
 
 ## 11. How this scales, and what triggers each step
 
@@ -617,3 +689,32 @@ its ranked fixes were applied before approval, a metric-window mismatch
 between renditions and the wording of the first machine-found catch among
 them. Why this revision exists: the system moved, and the standing rule is
 that this document is not allowed to drift from it.
+
+Version 3, 2026-07-30. Staged and revised through the same pipeline the
+document describes, run to completion: the capture sweep of the private
+inbox, staged drafts, the four-persona cold read against the staged
+text whose findings are applied in this version, the privacy scrub as a
+named pass, and the author's approval of the exact text, including his
+rulings on the three items the privacy read raised (the cross-vendor
+disclosure sentence added to section 5, the case study's regime detail
+retained under the version 1 ruling, and the author's self-disclosures
+retained). What changed. The section 2 flow diagram gained the closure harvest loop, the
+measurement node gained the pending-marker sweep, and the
+process-feedback path was redrawn through the human's ruling after the
+panel caught it bypassing ratification on the page. A new passage names
+the two loops that feed doctrine and the deciding-versus-codifying
+distinction, with its lineage credited. Section 9 gained the system's
+biggest structural failure to date, told honestly: the event-driven
+capture debt that let a concentrated share of lessons sit unextracted in
+one engagement's working files, why the author reasonably believed they
+were already ratified, the three standing repairs, and the stated
+residual the repairs do not cover. Section 10 gained the credit
+annotation for the version 3 mechanisms, which postdate its prior-art
+scan. The panel also caught, in the staged draft before publication: an
+arithmetic inconsistency in the new passage's own counts, the front
+matter still calling itself version 2, and metric windows frozen at
+version 2 values, each fixed in this text and each an instance of a
+failure class this document claims to mechanize away, which is the panel
+earning its keep. Identifiers follow the bounded disclosure stated in
+the opening. Why this revision exists: same rule as version 2, the
+system moved.

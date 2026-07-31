@@ -21,10 +21,10 @@ queue until the human rules.
 Every human correction becomes a standing mechanism, logged in a register
 that pairs each catch with the rule it produced and exposes repeat
 failures; a rule that fails twice as memory gets pushed down to the tool
-layer as a mechanical guard that cannot forget. The register grew from 21
-rows to 28 in the four days since first publication, and the newest row is
-the first found by a routine machine pass in ordinary operation rather
-than by the human.
+layer as a mechanical guard that cannot forget. Between first publication
+and the version 2 revision, four days, the register grew from 21 rows to
+28, and the newest row then was the first found by a routine machine pass
+in ordinary operation rather than by the human.
 
 And the whole thing grades itself on five numbers a month, starting from
 an honestly embarrassing baseline; the first monthly reading comes due in
@@ -91,7 +91,7 @@ private repository, and they are available as a live walkthrough rather
 than a download.
 
 This page is the two minute rendition of the thesis, derived from version
-2, 2026-07-16.
+3, 2026-07-30.
 
 Jason Lopez
 [linkedin.com/in/jaylpz](https://www.linkedin.com/in/jaylpz)
