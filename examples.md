@@ -1,7 +1,8 @@
 # The system at work: one example per domain
 
 Companion to "Operating an AI." Jason Lopez. Version 2, 2026-07-16,
-derived from thesis version 2.
+derived from thesis version 2; checked against thesis version 3
+(2026-07-30), no vignette changes required.
 
 Same convention as the thesis. These are real, recorded events presented as
 a demonstration environment. Parties are fictionalized, identifying figures
