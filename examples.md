@@ -116,7 +116,7 @@ revision you are reading walked back through that same gate.
 ## The thread through all six
 
 Every one of these domains, including the workspace this document stages
-in, now conforms to the same seven-part skeleton described in the thesis,
+in, now conforms to the same eight-part skeleton described in the thesis,
 one born from it and the rest assessed against it with the found gaps
 closed and deviations named, and every one of
 these examples is the same pattern wearing different clothes.

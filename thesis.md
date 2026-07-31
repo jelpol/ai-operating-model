@@ -84,7 +84,7 @@ gates, this system produces technical deployment work, identity and
 endpoint configurations, tenant hardening baselines, migration sequencing; business
 frameworks, service offerings, pricing models, buyer personas; and
 tactical project plans for compliance, control trackers, remediation
-sequencing, evidence planning. The seven parts of the skeleton,
+sequencing, evidence planning. The eight parts of the skeleton,
 described in the next section, do not care whether the deliverable is a
 hardening policy or a pricing sheet, and that indifference is deliberate.
 One operating model, any domain of work.
@@ -175,7 +175,7 @@ feeds; it keeps what the two loops add lean.
 
 ## 3. The skeleton
 
-Every workspace now conforms to the same seven-part frame, held in a
+Every workspace now conforms to the same eight-part frame, held in a
 standard that no single workspace owns. One workspace was born from it; the
 other five predated it and were assessed against it the same day, the gaps
 the audits found were closed, and the deviations were named, which is its
@@ -203,6 +203,11 @@ own evidence the frame retrofits onto work that already exists. In plain terms t
    stated, never from the model's memory. Claims carry a confidence label.
    High-stakes answers get a separate adversarial pass whose only job is to
    attack the draft.
+8. A workboard. Any domain running more than one open thread carries a
+   standing board the session reads before anything else, updated in the
+   same commit as the work it tracks, and every row that waits on a human
+   states when to act and what happens after, so a decision item is never
+   a pile without a plan.
 
 The skeleton is a gold image, the same concept I use for hardening tenant
 configurations. New initiatives are stamped from it, content stays local to
@@ -716,5 +721,13 @@ matter still calling itself version 2, and metric windows frozen at
 version 2 values, each fixed in this text and each an instance of a
 failure class this document claims to mechanize away, which is the panel
 earning its keep. Identifiers follow the bounded disclosure stated in
-the opening. Why this revision exists: same rule as version 2, the
-system moved.
+the opening. Same day, hours after this version first published, the
+starter-kit refresh's class sweep caught the document still describing
+the skeleton as seven parts although the workboard had been ratified as
+part 8 on 2026-07-28: section 3 gained its eighth item, every rendition
+now says eight, and the kit ships the eight-part template. The panel had
+not caught it because no cold reader can know a part the text never
+mentions, which is itself worth recording: reviews find internal
+contradictions, only reconciliation against the source system finds
+omissions. Why this revision exists: same rule as version 2, the system
+moved.

@@ -42,11 +42,12 @@ I approve the exact text.
 
 ```
 Now stand up my first workspace using templates/skeleton-template.md as
-the frame. Interview me one question at a time to fill in all seven parts
+the frame. Interview me one question at a time to fill in all eight parts
 for this domain: the lenses to apply while building, the personas the work
 is for, the grading rubric, the error controls, the learning loop and
-where lessons get routed, the honest stated limit, and the verification
-gate with my high-stakes triggers. Any part that genuinely does not apply
+where lessons get routed, the honest stated limit, the verification
+gate with my high-stakes triggers, and whether this domain runs enough
+parallel threads to need a standing workboard. Any part that genuinely does not apply
 gets a named deviation with a reason, never silently skipped. Then create
 the workspace folder with a thin loader built from
 templates/workspace-loader-template.md, an index, the doctrine file, and a

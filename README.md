@@ -12,7 +12,7 @@ The two minute version. The system runs six domains of work (a job search,
 business consulting for managed services providers, service offering
 design, technical advisory, device management, and this publication) from
 one private repository, each domain under its own doctrine, all conforming
-to one seven-part frame. Every substantive answer passes a risk-tiered
+to one eight-part frame. Every substantive answer passes a risk-tiered
 verification gate, and high-stakes work gets the full adversarial stack.
 Every substantive build opens with the plan and the criteria it will be
 judged by, agreed before the work starts. Every open decision sits in a
@@ -61,7 +61,7 @@ claim.
    how it scales.
 2. **[The examples](examples.md)**. One worked vignette per domain,
    fictionalized, real events.
-3. **[The starter kit](starter-kit/)**. The seven-part skeleton, the
+3. **[The starter kit](starter-kit/)**. The eight-part skeleton, the
    workspace loader, and the intake protocol as reusable templates. MIT
    licensed. Take them.
 4. **[The prior-art survey](prior-art-survey.md)**. Where this sits among

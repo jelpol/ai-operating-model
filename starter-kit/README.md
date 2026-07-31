@@ -9,7 +9,7 @@ Contents.
 - `rollout-guide.md`. Start here. Step-by-step instructions and three
   copy-paste prompts that stand the whole framework up in one guided
   session.
-- `skeleton-template.md`. The seven-part frame every workspace is built
+- `skeleton-template.md`. The eight-part frame every workspace is built
   from. Start any new AI-managed domain of work by filling this in.
 - `workspace-loader-template.md`. The thin on-demand loader file that
   makes a workspace self-loading without bloating the always-on context.
