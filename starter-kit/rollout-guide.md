@@ -15,7 +15,9 @@ keep that one.
 Make a private repository and open Claude Code inside it. Copy the three
 template files from this kit (`skeleton-template.md`,
 `workspace-loader-template.md`, `intake-command-template.md`) into a
-`templates/` folder in your repo.
+`templates/` folder in your repo. The fourth template,
+`adversarial-review-protocol.md`, joins later, on the day you add a
+second model; the guided session below only needs the three.
 
 ## Step 2. Paste Prompt One, the foundation
 
@@ -29,9 +31,10 @@ that loads every session, carrying only the always-true rules - git is the
 source of truth, commit every session and push whenever a remote is
 configured, validate the approach with
 me before building anything, present every open decision in a numbered
-"Waiting on you" block at the end of your responses, and never state a
+"Waiting on you" block at the end of your responses, never state a
 vendor, version, price, or time-dependent fact from memory without live
-verification; (2) a MAINTENANCE.md with an empty catch register (every
+verification, and when I correct an error, propose a catch-register row
+and the standing rule that prevents the class; (2) a MAINTENANCE.md with an empty catch register (every
 time I catch you in an error, it gets a row here paired with the standing
 rule that prevents the class) and a five-number monthly scorecard
 template. Show me both files before writing them. Nothing is final until
@@ -42,12 +45,13 @@ I approve the exact text.
 
 ```
 Now stand up my first workspace using templates/skeleton-template.md as
-the frame. Interview me one question at a time to fill in all eight parts
+the frame. Interview me one question at a time to fill in all nine parts
 for this domain: the lenses to apply while building, the personas the work
 is for, the grading rubric, the error controls, the learning loop and
 where lessons get routed, the honest stated limit, the verification
-gate with my high-stakes triggers, and whether this domain runs enough
-parallel threads to need a standing workboard. Any part that genuinely does not apply
+gate with my high-stakes triggers, whether this domain runs enough
+parallel threads to need a standing workboard, and which document classes
+will repeat and need a class-level standard. Any part that genuinely does not apply
 gets a named deviation with a reason, never silently skipped. Then create
 the workspace folder with a thin loader built from
 templates/workspace-loader-template.md, an index, the doctrine file, and a

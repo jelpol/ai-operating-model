@@ -4,15 +4,19 @@
 
 Jason Lopez
 
-Version 3, revised 2026-07-30. First drafted 2026-07-12; version 2
-published 2026-07-16. This is a living
+Version 4, revised 2026-08-02. First drafted 2026-07-12; version 2
+published 2026-07-16; version 3 published 2026-07-30. This is a living
 document. It stages in a private repository and publishes from a public one
-after a privacy review. Nothing here names a client, a colleague, or a
+after a privacy review. This version also publishes in Spanish, under
+`es/` in the same repository, translated from this exact text with its
+own fidelity and privacy gates recorded in the revision history.
+Nothing here names a client, a colleague, or a
 price. Examples are drawn from real, recorded events and presented as a
 demonstration environment, parties fictionalized and identifying figures
 rounded. The package was red-teamed for re-identification by a cross-vendor
 auditor with access to the private records through version 2; version 3
-additions passed the staged review gates recorded in the revision history,
+and version 4 additions passed the staged review gates recorded in the
+revision history,
 and the residual risk is stated plainly rather than warranted away. People who participated in the
 underlying events may recognize their own stories; readers of the public
 material alone should not be able to trace any example to a real person or
@@ -29,7 +33,11 @@ meaning I caught flaws before the AI's own reviews did, and the whole design
 exists to invert that number. Between first publication and the version 2
 revision, four days, the register of corrections grew from 21 rows to 28,
 and the newest row then was the first found by a routine machine pass in
-ordinary operation, not by me and not by a commissioned review. The rest of this
+ordinary operation, not by me and not by a commissioned review. By early
+August the register held 53 rows, the first monthly scorecard reading had
+run on schedule with no human present, and it published the way this
+document promised it would: the humans still catch most of the flaws, and
+the number is in section 7. The rest of this
 document is how, what broke
 along the way, and when each piece scales. The parts are all public ideas.
 The assembly is the contribution.
@@ -84,7 +92,7 @@ gates, this system produces technical deployment work, identity and
 endpoint configurations, tenant hardening baselines, migration sequencing; business
 frameworks, service offerings, pricing models, buyer personas; and
 tactical project plans for compliance, control trackers, remediation
-sequencing, evidence planning. The eight parts of the skeleton,
+sequencing, evidence planning. The nine parts of the skeleton,
 described in the next section, do not care whether the deliverable is a
 hardening policy or a pricing sheet, and that indifference is deliberate.
 One operating model, any domain of work.
@@ -137,7 +145,7 @@ flowchart TD
     B --> C["Context loads itself<br/>global doctrine always ·<br/>workspace doctrine on touch ·<br/>memory recall"]
     C --> D{"What kind of ask?"}
     D -->|"dropped artifact"| E["Intake protocol<br/>reverse-engineer it, then<br/>six framing questions"]
-    D -->|"new initiative"| F["New workspace<br/>born from the 7-part skeleton"]
+    D -->|"new initiative"| F["New workspace<br/>born from the nine-part skeleton"]
     D -->|"existing work"| G["workspace doctrine<br/>validate before building"]
     D -->|"process feedback"| H["persist to doctrine<br/>same session, through<br/>the same ruling"]
     E --> I["Build<br/>lenses + rubric applied<br/>during the work, not after"]
@@ -175,7 +183,7 @@ feeds; it keeps what the two loops add lean.
 
 ## 3. The skeleton
 
-Every workspace now conforms to the same eight-part frame, held in a
+Every workspace now conforms to the same nine-part frame, held in a
 standard that no single workspace owns. One workspace was born from it; the
 other five predated it and were assessed against it the same day, the gaps
 the audits found were closed, and the deviations were named, which is its
@@ -208,6 +216,24 @@ own evidence the frame retrofits onto work that already exists. In plain terms t
    same commit as the work it tracks, and every row that waits on a human
    states when to act and what happens after, so a decision item is never
    a pile without a plan.
+9. A document-class standard. Any kind of document that will repeat,
+   client packages, reports, guides, specifications, gets a written
+   standard for what a complete instance must do plus a naming
+   convention, defined at the class level before the second instance
+   exists, so quality is a property of the class and not of whichever
+   instance happened to get the most attention.
+
+The part count itself carries a confession. As the skeleton grew from six
+parts to nine in a matter of weeks, the prose stating the count drifted out of
+sync with the list of parts three separate times, caught in turn by an
+internal audit, by an outside model's audit, and by the monthly ritual,
+because the count was stated in several places and the list lived in
+another. The fix was not a better reminder. The act of adding a part now
+carries the count update as part of its own definition, written into the
+standard next to the parts themselves. The general rule is worth the
+embarrassment of the story: when a fact is stated in one place and derived
+from another, the two will drift, and the repair belongs at the moment of
+change, not at review time.
 
 The skeleton is a gold image, the same concept I use for hardening tenant
 configurations. New initiatives are stamped from it, content stays local to
@@ -271,6 +297,20 @@ blind to its own blind spots. The system documents that limitation instead
 of hiding it, which is exactly what I would demand of any security control
 I was asked to trust.
 
+The stack, drawn as the defense in depth it is.
+
+```mermaid
+flowchart TD
+    W["A claim, a number,<br/>a draft on its way out"] --> S1["1 · Live-source verification<br/>trust-ranked by question class,<br/>never model memory"]
+    S1 --> S2["2 · Confidence labels<br/>established fact · consensus<br/>practice · judgment"]
+    S2 --> S3["3 · Adversarial second pass<br/>built to refute, at high stakes"]
+    S3 --> S4["4 · Five-question stress-test<br/>time · coverage · assumption ·<br/>alternative · skeptic"]
+    S4 --> S5["5 · Deliverable pipelines<br/>recalculate, scrub,<br/>render, verify"]
+    S5 --> S6["6 · Human ratification<br/>nothing becomes a rule<br/>without sign-off"]
+    S6 --> S7["7 · Cross-vendor outside review<br/>containment protocol,<br/>implementer never audits itself"]
+    S7 --> OK["Ships, with its<br/>audit trail attached"]
+```
+
 ## 5. More than one AI at the table
 
 Nothing in this system assumes a single model, and the most rigorous
@@ -298,6 +338,64 @@ a second vendor's model, ending in a ratified decision set, an
 implementation manifest mapping every agreed item to its commits, and a
 cross-audit whose open findings blocked closure until resolved. The
 private repository holds every round of it.
+
+Since version 3 the seats at the table have names and a written routing
+table. Claude authors; it is the thinking-heavy default and the model this
+system is built with. OpenAI's Codex, driven from its command-line agent,
+is the standing adversarial auditor, deliberately a different vendor than
+the author so no model grades its own homework. A third vendor's
+long-context model is slotted for whole-document cold reads, listed
+honestly in the registry as installed but parked until its login is redone.
+And for privacy-sensitive material there is a local model on my own
+machine, because some data should not cross a vendor boundary to be
+analyzed at all. The routing table pairs each work type with its model and
+names the flip triggers: every session states in one line which model is
+running and why it fits, planning flips to a counterpart when the work
+crosses into its strength, and every high-stakes deliverable gets a
+counterpart pass by default before it ships. One boundary stated plainly,
+a model cannot switch its own tier mid-session, so those flips are always
+a one-line command handed to me.
+
+The counterpart passes stopped being copy-paste ceremonies and became
+automated runs, driven from the command line under the same containment
+rules, which is what made them cheap enough to be defaults. And every pass
+now feeds a flip-outcome log recording what the counterpart caught that
+the author missed, because a pairing has to earn its cost with findings or
+get demoted. The log's first entries settled a design question with data.
+On the same material, the author-side persona panel caught deep technical
+contradictions the counterpart missed, and the counterpart caught
+structural classes the panel missed, an obsolete design branch that had
+survived a keyword sweep, handoff language contradicting a scope ruling,
+overclaims in one-line descriptions. Neither validator alone was
+sufficient. Diversity of validator type beats redundancy of the same
+type, which any defense-in-depth practitioner would have predicted and
+the log can now demonstrate.
+
+The strongest version of the pattern is the convergence protocol, born
+from a one-line directive: make sure the two models agree. The build ran
+five adversarial rounds to an agreed verdict, and the mechanics are the
+lesson. Each round re-verifies the previous round's fixes with exact-quote
+discipline, and the finding count only moves down when a fix is real. That
+discipline caught something a single model would have papered over: two
+fixes "applied" by scripts whose text match had silently drifted never
+landed in the document at all, while the drafts claimed they had. Every
+patch now asserts its match or fails loudly, and the false claim is
+recorded in the provenance rather than reworded away. In the same
+exchange the auditor caught the implementer's own bookkeeping error,
+twenty-three findings where the implementer counted twenty-one, which is
+not an embarrassment, it is the reason the second chair exists.
+
+```mermaid
+flowchart TD
+    A["Ratified ask"] --> B["Author model builds<br/>in one dedicated exchange folder,<br/>everything else read-only"]
+    B --> C["Counterpart model attacks<br/>different vendor · CLI-automated ·<br/>exact-quote discipline"]
+    C --> D["Findings land as<br/>a decision menu,<br/>never self-executing"]
+    D --> E{"The human rules"}
+    E -->|"ratified changes"| F["One model implements"]
+    F --> G["The other audits the diffs<br/>against exactly what was agreed"]
+    G -->|"open findings<br/>block closure"| C
+    G --> H["Agreed verdict ·<br/>flip-outcome log records<br/>what each chair caught"]
+```
 
 ## 6. The human's job
 
@@ -373,6 +471,63 @@ grammatically correct for the context and never reading as
 machine-written, which covers the cases nobody enumerated. Doctrine that
 starts as a list of cases and matures into a test is doctrine that scales.
 
+The newest catches show how subtle the governance job gets. During a live
+incident, drafting a stakeholder update from a team member's summary, the
+AI turned "the team will continue reviewing logs" into "we are also
+checking logs," a plan upgraded into work in progress by a two-word tense
+edit.
+Nobody had confirmed the work existed. I caught it with one question, are
+we actually doing that, and the rule it produced is that no draft may
+commit the team to an action without a recorded source, no source means
+the line moves to a labeled suggestion list, and planned actions stay in
+planned tense. An AI drafting on behalf of a team does not just risk
+inventing facts. It risks inventing commitments, and the smallest edit is
+enough to do it.
+
+The same week taught me that a gate without a stated scope gets classified
+around. A research summary shipped without its adversarial pass because
+the AI decided a summary was not a deliverable, and hours after that rule
+was tightened, a send-ready package did the same dance in a different
+costume. The fix was to key the gates on the substance of the output,
+anything I will send, act on, or hand to a person, rather than on what
+the output calls itself. Every gate now states what class of output it
+fires on, because a rule that leaves classification to the governed is an
+invitation.
+
+When the second same-day repeat landed, I asked for something different,
+not another fix but the failure mechanics themselves, how the model
+actually processes rules and where the choke points are. The answer became
+a design tool. Rules are not tripwires, they compete for the model's
+attention, and old reinforced habits outvote a new one-line rule unless
+the old text is superseded in place. Out of that came a reliability
+ladder the register had been climbing for weeks without naming it. A rule
+that lives as judgment is a hope. A rule in prose doctrine is memory.
+A rule the artifact itself makes visible, a required section that is
+conspicuously absent when skipped, is a check the eye performs. And a
+rule enforced by the tooling before the action runs is machinery that
+cannot forget. New rules now get placed on a rung deliberately at
+ratification, and a repeat catch moves the control one rung down. That
+is defense in depth applied to my own habits, and it is the same ladder
+the earlier tool-layer story climbed one rung at a time.
+
+```mermaid
+flowchart TD
+    R4["Rung 4 · Judgment<br/>the model weighs it in the moment"] -->|"repeat catch"| R3["Rung 3 · Prose doctrine<br/>loaded and remembered"]
+    R3 -->|"repeat catch"| R2["Rung 2 · Artifact-visible<br/>the document shows its own gap"]
+    R2 -->|"repeat catch"| R1["Rung 1 · Harness-enforced<br/>blocked before it runs,<br/>cannot be forgotten"]
+```
+
+Two more patterns I contribute deliberately, because the human's habits
+are part of the system's design. I attack the AI's plans the way it
+attacks its own drafts; a recent framework proposal was challenged three
+times before ratification and every challenge surfaced a real
+improvement, which says the adversarial posture belongs on both sides of
+the table. And improvement here has two intake doors, not one. Lessons
+arrive through failure, catches and corrections, but enhancements arrive
+through imagination, and a system that only learns from its failures
+improves slower than one that also learns from its ideas. Until recently
+only the first door existed here.
+
 That pattern, correction becomes procedure, is the entire growth engine of
 the system. It is also, I would argue, the actual skill this document
 showcases. Anyone can ask a model for output. Operating one means building
@@ -391,15 +546,16 @@ mechanisms rather than memory, on rituals, registries, queues, and
 promotion rules.
 That grade is self assessed and provisional; the outside review described
 at the end of this document has since run, and its findings are folded
-into this text and the revision history. The thresholds,
-denominators, and promotion criteria get defined at the first monthly
-reading, and all of it publishes either way. Level four is
+into this text and the revision history. Level four is
 measured, and level five is optimizing, where the numbers drive the
 changes.
 
-The measurement is deliberately small. Five numbers, to be recorded once a
-month in ten minutes; the first monthly reading comes due at the start of
-August 2026 and publishes either way. The rework rate on shipped deliverables. The catch layer,
+The measurement is deliberately small. Five numbers, recorded once a
+month in ten minutes; the first monthly reading ran at the start of
+August 2026, and the readings this document can substantiate publicly,
+the catch layer, the context growth, and whether the ritual ran, are
+published below, as promised, either way. The full five-number board
+lives in the private scorecard, and future revisions publish its trend. The rework rate on shipped deliverables. The catch layer,
 meaning who finds flaws first, the AI's own passes or me. Coverage debt,
 rules that have not reached every place they should apply. The size of the
 always-loaded context, which should stay flat while capability grows,
@@ -426,6 +582,53 @@ honestly, built the mechanism
 that should invert it, and will publish the trend. A system that documents its own failure modes
 is more credible than one that claims reliability, in AI exactly as in
 security.
+
+The first official reading is now on the record, and it kept that
+promise the uncomfortable way. The ritual ran on 2026-08-01 as a
+scheduled job with no human present, its own doctrine file as its
+instruction set, which is itself the point: a maintenance ritual that
+depends on someone remembering it is not a mechanism, it is an
+intention. An unattended pass can measure, and it can fix mechanical
+drift, but it cannot ratify, so it correctly closed with a decision
+menu for me rather than with silently closed items. The numbers it
+recorded say the catch layer is still mine. Of the nineteen catches
+registered since a follow-up audit on 2026-07-17, eighteen were mine and
+one came from the field; the AI's own review passes contributed zero,
+and two of the nineteen were repeats of existing rules, which the
+register scores as mechanism failures. The register stood at fifty-three
+rows the next day, and the arithmetic closes like this: twenty-eight
+rows at version 2, three more before the audit anchored its window,
+the nineteen the reading counted, and three same-day catches landing in
+the hours after the reading ran. A month of heavy delivery had felt productive while the separate
+review layer quietly thinned, and the scorecard is the only thing in
+the system positioned to say so. A framework that only counts what it
+built will always report success. The measure that can embarrass it is
+the one worth keeping.
+
+The same pass caught something subtler than a bad number. A mechanism
+ratified days earlier, a weekly briefing, existed in doctrine and
+nowhere else; the scheduled job that would actually fire it had never
+been created, and the ritual flagged it before its first Monday came
+due. That is the first-fire rule earning its keep: a mechanism is
+verified when it demonstrably runs, not when its text lands in a file,
+because ratified and running are different states and only one of them
+does any work. The pass also declined an optimization its own doctrine
+suggested, trimming always-loaded context that had grown twelve percent,
+because the growth belonged to mechanisms not yet fired once, and
+trimming the carrier of an unverified mechanism is how a mechanism
+silently dies. Optimization that runs ahead of verification is not
+optimization. The maturity grade stays at managed, now with one honest
+measured reading behind it instead of none.
+
+```mermaid
+flowchart TD
+    A["Monthly ritual fires<br/>as a scheduled job,<br/>human not required"] --> B["Five numbers recorded<br/>rework · catch layer · coverage debt ·<br/>context size · did the ritual run"]
+    B --> C["Mechanical drift<br/>fixed in place"]
+    B --> D["Meaning-level findings<br/>become a decision menu"]
+    D --> E{"The human rules"}
+    E --> F["Doctrine changes land,<br/>dated and committed"]
+    F -->|"next month reads<br/>the trend"| A
+```
 
 ## 8. A day in the system
 
@@ -518,6 +721,19 @@ scheduled sweep that assumes silence is hiding something. The sharp part
 is that I had built the event-driven half and skipped the scheduled
 half, in a system explicitly modeled on defense in depth.
 
+The first scheduled sweep proved the point by finding two rules that had
+never come through the front door. One had been written straight into a
+device's memory layer as a quiet preference weeks earlier, firing on
+every session on that machine while the doctrine registry knew nothing
+about it. Another session had produced twenty-five commits including a
+canonical settings change and written no capture entry at all. Both
+failures share a root cause worth naming. The intake pipeline triggers
+on someone saying make that a rule, and on corrections registered as
+catches; a rule that arrives as a passing preference in the middle of
+delivery trips neither wire. The mechanism-creating session that does
+not feel like a doctrine session is the blind spot, and the scheduled
+sweep is now the net under it.
+
 ## 10. Where this sits among what is already public
 
 Before claiming any of this is different, I had the ecosystem scanned in a
@@ -548,7 +764,13 @@ named where they appear, after-action reviews for the closure harvest,
 corrective-action aging reviews for the marker sweep, double-loop
 learning and maturity-model institutionalization for the
 ruling-versus-doctrine distinction, and they are claimed, like
-everything else here, only as assembly. A standing note on naming: local
+everything else here, only as assembly. The version 4 mechanisms, the
+model routing table, the capability dispatch at intake, the first-fire
+verification rule, likewise postdate the scan; the neighbors named for
+them here, operations rostering, capability-based planning, and the
+commissioning tests any control framework runs before trusting a new
+control, are the author's informal credits rather than survey results,
+and the mechanisms are claimed, as ever, only as assembly. A standing note on naming: local
 names in this document are handles, not novelty claims; where a
 mechanism has an established name, the text credits it.
 
@@ -614,8 +836,14 @@ system, the ratification model and the audit trail have to serve them too.
 The measurement rhythm is monthly and the trend will be public in future
 revisions of this document. And before the first version published, the system itself went through a
 three-round adversarial review by a different vendor's model under the
-containment protocol, so the claims here carry a genuinely independent
-check; its findings are folded into this text and recorded in the revision
+containment protocol, so the claims here carry a check from a model
+that does not share the author's training or tooling, which reduces
+the odds of a shared blind spot without eliminating them. Honest bound
+stated with it: the
+reviewer is cross-vendor and fresh-context, and still commissioned,
+scoped, and adjudicated by the author, which is less than full
+independence and more than self-review. Its findings are folded into
+this text and recorded in the revision
 history.
 
 This document began the same day the system was provisionally
@@ -731,3 +959,41 @@ mentions, which is itself worth recording: reviews find internal
 contradictions, only reconciliation against the source system finds
 omissions. Why this revision exists: same rule as version 2, the system
 moved.
+
+Version 4, 2026-08-02. Staged and revised through the same pipeline:
+capture sweep of the private inbox against the published text, a written
+delta list recording every addition with its source, staged drafts, the
+four-persona cold read, a cross-vendor adversarial pass run from the
+command line, the privacy scrub as a named pass, and the author's
+approval, which this cycle took a different form and is recorded
+plainly because the approval standard is part of the showcase: the
+author approved the pipeline and its recorded gates prospectively
+rather than reading the exact text line by line, a first for this
+document, with the cross-vendor pass standing in as the text-level
+check his read would otherwise supply. What changed. The skeleton reached nine parts
+with the document-class standard, and section 3 now tells the
+count-drift story honestly as a three-time recurrence with the repair
+moved to the moment of change. Section 5 grew from a protocol
+description into the full multi-model operation: the named roster and
+routing table, the automated cross-vendor passes, the flip-outcome log
+and its diversity-beats-redundancy finding, and the convergence
+protocol with the silent-patch lesson. Section 6 gained the newest
+governance patterns: the tense-upgrade catch and the
+commitment-traceability rule, the classification dodge and
+scope-stated gates, the reliability ladder now used as a placement
+tool at ratification, the human's adversarial posture toward the AI's
+plans, and the two-door learning loop. Section 7 published the first
+official scorecard reading, an unattended run whose catch-layer number
+went the wrong way and published anyway, along with the
+ratified-is-not-running catch and the restraint finding. Section 9
+gained the side-channel intake blind spot. Four diagrams were added,
+the verification stack, the exchange flow, the reliability ladder, and
+the measurement loop, and the flow diagram's stale part count was
+corrected. This version also introduces the Spanish (Mexico) edition
+under `es/`, translated from this version's exact text under a
+translation standard with its own mechanical fidelity diff,
+cross-vendor fidelity audit, and independent privacy scrub; English
+remains canonical, each Spanish file records the English commit it
+tracks, and every future revision carries the Spanish pass in the same
+cycle. Why this revision exists: the system moved, and this time the
+readership widened.

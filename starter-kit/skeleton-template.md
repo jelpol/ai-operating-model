@@ -1,4 +1,4 @@
-# The eight-part skeleton (template)
+# The nine-part skeleton (template)
 
 Every AI-managed domain of work (a job search, a business function, an
 advisory practice, a compliance program) gets built from this frame. Fill
@@ -120,3 +120,23 @@ sequencing is a pile, not a plan.
 Your board (or a named deviation if this domain is genuinely
 single-threaded):
 - ...
+
+## 9. Document-class standard
+
+Any kind of document this domain will produce more than once (client
+packages, reports, guides, specifications) gets a written standard at the
+class level BEFORE the second instance exists: what a complete instance
+must do, and how instances are named. Quality becomes a property of the
+class, not of whichever instance got the most attention. Conventions that
+already exist and work (dated logs, numbered registers) stand as their
+classes' standards; this part does not retrofit them, it catches the next
+class early.
+
+Your repeating document classes and where each class standard lives:
+- ...
+
+A maintenance note that earned its place here: when you add a part to
+this skeleton, update every place that states the part count in the same
+change. The count and the list WILL drift apart otherwise; in the system
+this template comes from, they drifted three times before the repair
+moved to the moment of change.

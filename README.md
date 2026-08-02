@@ -1,5 +1,7 @@
 # Operating an AI
 
+**Lea esta documentación en español: [es/README.md](es/README.md)**
+
 **I spent nearly two decades running security operations and incident response.
 Now I run an AI the same way I ran security programs, as a governed
 operation with written doctrine, layered verification, honest metrics, and
@@ -12,11 +14,15 @@ The two minute version. The system runs six domains of work (a job search,
 business consulting for managed services providers, service offering
 design, technical advisory, device management, and this publication) from
 one private repository, each domain under its own doctrine, all conforming
-to one eight-part frame. Every substantive answer passes a risk-tiered
+to one nine-part frame. Every substantive answer passes a risk-tiered
 verification gate, and high-stakes work gets the full adversarial stack.
 Every substantive build opens with the plan and the criteria it will be
 judged by, agreed before the work starts. Every open decision sits in a
-queue until the human rules.
+queue until the human rules. And more than one AI sits at the table: a
+second vendor's model audits what the first one builds under a written
+containment protocol, the passes run automated from the command line, a
+routing table says which model gets which work, and a flip-outcome log
+records what each pass caught so a pairing has to earn its cost.
 
 Every human correction becomes a standing mechanism, logged in a register
 that pairs each catch with the rule it produced and exposes repeat
@@ -24,25 +30,33 @@ failures; a rule that fails twice as memory gets pushed down to the tool
 layer as a mechanical guard that cannot forget. Between first publication
 and the version 2 revision, four days, the register grew from 21 rows to
 28, and the newest row then was the first found by a routine machine pass
-in ordinary operation rather than by the human.
+in ordinary operation rather than by the human. By early August the
+register held 53 rows.
 
 And the whole thing grades itself on five numbers a month, starting from
-an honestly embarrassing baseline; the first monthly reading comes due in
-August 2026 and publishes either way. On day one, the human caught flaws
-before the AI's own reviews did, twice. The system published that number
-and built the machinery to invert it.
+an honestly embarrassing baseline. The first monthly reading ran on
+schedule in August 2026, unattended, and the readings it can
+substantiate publicly published either way: the human still catches most
+flaws first, and the thesis shows that number rather
+than rounding it up to a success story, with the full board held in the
+private scorecard until its trend can publish. On day one, the human caught
+flaws before the AI's own reviews did, twice. The system published that
+number and built the machinery to invert it, and it keeps publishing
+until the trend obeys.
 
-It recently proved itself on real work. Given a compliance tracker for a
+It recently earned its keep on real work. Given a compliance tracker for a
 second opinion, it verified every control weight against the official
 government scoring source and found a defect affecting roughly one in six
-controls, with the math to defend the fix.
+controls, with the math to defend the fix. One story is a data point,
+not a warranty; the thesis carries the fuller record, failures included.
 
 ## If I applied to a role with you, read this first
 
 Here is the translation into hiring terms. This repository is a security
 program applied to AI. Written doctrine and governance. Layered controls
 of different kinds, designed so no single failure is silent. Separation of
-duties, no implementer audits its own work. Measurable outcomes with honestly
+duties in the cross-vendor review, where no implementer audits its own
+work. Measurable outcomes with honestly
 embarrassing baselines published on purpose. A cross-vendor audit protocol.
 Documented failure handling that turns every incident into a control. That
 is the same discipline I have run in security operations and incident
@@ -61,8 +75,10 @@ claim.
    how it scales.
 2. **[The examples](examples.md)**. One worked vignette per domain,
    fictionalized, real events.
-3. **[The starter kit](starter-kit/)**. The eight-part skeleton, the
-   workspace loader, and the intake protocol as reusable templates. MIT
+3. **[The starter kit](starter-kit/)**. The nine-part skeleton, the
+   workspace loader, the intake protocol, and the cross-vendor
+   adversarial review protocol as reusable templates, with a guided
+   rollout that stands the framework up in one session. MIT
    licensed. Take them.
 4. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
    published practice, every source verified live, credit where ideas were
@@ -73,7 +89,9 @@ claim.
 Examples use a demonstration environment. Parties are fictionalized,
 identifying figures rounded, real events recorded privately, and the
 package was red-teamed for re-identification by a cross-vendor auditor
-with access to the private records; participants in real events may
+with access to the private records through version 2, with later
+additions passing the staged review gates recorded in the thesis's
+revision history; participants in real events may
 recognize their own stories, and readers of the public material alone
 should not be able to trace any example to a real person or organization.
 Claims in
@@ -85,13 +103,14 @@ everything here. One model wearing all the hats is not independent review,
 which is why the design leans on primary sources, human ratification, and
 a cross-vendor audit protocol, and why the failures publish alongside the
 wins. One more scope note: the prior-art survey, the starter kit, and the
-published trends can be checked right here; the register, the audit
+published scorecard readings can be checked right here; the register, the audit
 records, and the git history that back the other claims live in the
 private repository, and they are available as a live walkthrough rather
 than a download.
 
 This page is the two minute rendition of the thesis, derived from version
-3, 2026-07-30.
+4, 2026-08-02. La edición en español se traduce de esa misma versión;
+comience en [es/README.md](es/README.md).
 
 Jason Lopez
 [linkedin.com/in/jaylpz](https://www.linkedin.com/in/jaylpz)
