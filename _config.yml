@@ -1,0 +1,9 @@
+title: Operating an AI
+description: >-
+  A security program applied to AI: written doctrine, layered verification,
+  honest metrics, and a cross-vendor audit trail. Documentación disponible
+  en español en /es/.
+theme: jekyll-theme-primer
+exclude:
+  - LICENSE
+  - starter-kit/LICENSE
