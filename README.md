@@ -84,7 +84,12 @@ claim.
    domain exported whole: the fifteen-module tailoring pipeline, the fact
    registry that keeps the AI honest, and a guided first session, sanitized
    for anyone to run in a plain AI chat. MIT licensed. Take it.
-5. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
+5. **[The technical advisory kit](technical-advisory-kit/)**. The
+   advisory domain exported whole: a research anchoring protocol that
+   makes the gap list the deliverable, a six-dimension design verdict
+   engine, and a session-wide verification gate, sanitized for anyone to
+   run in a plain AI chat. MIT licensed. Take it.
+6. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
    published practice, every source verified live, credit where ideas were
    borrowed.
 
