@@ -1,0 +1,67 @@
+{
+  "schema_version": "starter-1.0",
+  "_instructions": "Copy this file to my-data/fact_registry.json and fill it in, ideally by running prompts/03_proactive_interrogation.md in an AI chat. Every resume claim must trace to a fact in this file. Delete these _instructions lines as you go. Keep this file PRIVATE.",
+  "owner": "[YOUR FULL NAME]",
+  "last_updated": "[YYYY-MM-DD]",
+  "identity": {
+    "full_name": "[YOUR FULL NAME]",
+    "city_state": "[CITY, STATE]",
+    "phone": "[PHONE]",
+    "email": "[EMAIL]",
+    "linkedin": "[URL or empty]",
+    "headline_credential": "[Optional: one line for an active clearance or headline certification, if you have one. Otherwise empty.]"
+  },
+  "career_thesis": {
+    "_instructions": "Summarize from your filled career_thesis_template.md. 2 or 3 destination paths.",
+    "paths": [
+      { "id": "A", "name": "[e.g. People leadership track in your field]" },
+      { "id": "B", "name": "[e.g. Senior individual-contributor / specialist track]" }
+    ]
+  },
+  "roles": [
+    {
+      "employer": "[Company name]",
+      "title": "[Exact title on record]",
+      "start": "[YYYY-MM]",
+      "end": "[YYYY-MM or present]",
+      "scope": {
+        "team_size": "[number you managed or worked within, or unknown]",
+        "budget": "[amount you owned or influenced, or none]",
+        "customers_or_users": "[who your work served, with numbers if known]"
+      },
+      "facts": [
+        {
+          "id": "example-fact-1",
+          "claim": "[One true statement about what YOU did, in your own words. e.g. Migrated 40 stores to a new point-of-sale system over 6 months with zero days of lost sales.]",
+          "evidence": "[How you know the numbers: report, email, memory of the project plan.]",
+          "source": "confirmed_by_user",
+          "_source_options": "confirmed_by_user | source_resume | walk_through - the fact-check module (07) only accepts claims tracing to one of these",
+          "quantified": true
+        }
+      ]
+    }
+  ],
+  "skills_and_tools": [
+    "[Tools, platforms, methods you have actually used. One entry each.]"
+  ],
+  "certifications_education": [
+    {
+      "name": "[Degree or certification, exactly as issued]",
+      "issuer": "[School or body]",
+      "year": "[YYYY]",
+      "status": "[active | expired | in progress]"
+    }
+  ],
+  "metrics_bank": [
+    "[Standalone numbers you can defend: percentages improved, dollars saved, volumes handled, headcounts, timeframes.]"
+  ],
+  "locked_framings": [
+    "[Phrasings you have decided on and will not let the AI reword. e.g. how you describe a layoff, a gap, a title that undersold the work. Add these as sessions surface them.]"
+  ],
+  "do_not_claim": [
+    "[Things adjacent to your work that you did NOT do. Listing them here stops the AI from drifting into them. e.g. 'I supported the budget process but never owned a budget.']"
+  ],
+  "lessons_learned": [
+    "[Optional running list: what worked and failed in past applications, phrasing that landed, portal quirks you hit.]"
+  ]
+}

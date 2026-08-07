@@ -80,7 +80,11 @@ claim.
    adversarial review protocol as reusable templates, with a guided
    rollout that stands the framework up in one session. MIT
    licensed. Take them.
-4. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
+4. **[The resume tailoring kit](resume-tailoring-kit/)**. The job-search
+   domain exported whole: the fifteen-module tailoring pipeline, the fact
+   registry that keeps the AI honest, and a guided first session, sanitized
+   for anyone to run in a plain AI chat. MIT licensed. Take it.
+5. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
    published practice, every source verified live, credit where ideas were
    borrowed.
 
