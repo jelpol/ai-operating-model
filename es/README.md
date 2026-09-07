@@ -1,6 +1,6 @@
 # Operar una IA
 
-*Edición en español (México), traducida de la versión inglesa en el commit 40494f3. La versión en inglés es la canónica.*
+*Edición en español (México), traducida de la versión inglesa: el commit 40494f3 y las revisiones inglesas del 2026-09-06 (sección de contratación, ruta de adopción), publicadas en el mismo commit que esta traducción. La versión en inglés es la canónica.*
 
 **Read this documentation in English: [../README.md](../README.md)**
 

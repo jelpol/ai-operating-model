@@ -165,13 +165,16 @@ que pertenece a un workspace se ha filtrado hacia arriba.
 Los prompts de arriba suponen un repositorio vacío. En uno que ya
 contiene proyectos en funcionamiento, ejecute la sesión como una
 adaptación, no como una construcción. Parta de un árbol de trabajo limpio
-en una rama (branch) desechable. Antes de copiar cualquier cosa, revise
-si ya existen `templates/`, `CLAUDE.md` o `MAINTENANCE.md`; si alguno
-existe, decida desde ahora si se fusiona o si el material nuevo va bajo
-otro nombre, y no lo sobrescriba. Después copie los mismos tres archivos
-de plantilla del Paso 1 a `templates/` (o a la carpeta con el nombre que
-haya elegido). Pegue este párrafo antes del Prompt Uno, y otra vez antes
-del Prompt Dos:
+en una rama (branch) desechable. Dos reglas rigen desde aquí, pegue o no
+el párrafo de abajo: nada se crea, se copia ni se cambia en este
+repositorio hasta que usted haya aprobado esa ruta por su nombre, y no se
+hace push hasta que usted lo indique. Antes de copiar cualquier cosa,
+revise si ya existen `templates/`, `CLAUDE.md` o `MAINTENANCE.md`; si
+alguno existe, decida desde ahora si se fusiona o si el material nuevo va
+bajo otro nombre, y no lo sobrescriba. Después, con su aprobación, copie
+los mismos tres archivos de plantilla del Paso 1 a `templates/` (o a la
+carpeta con el nombre que haya elegido). Pegue este párrafo antes del
+Prompt Uno, y otra vez antes del Prompt Dos:
 
 ```
 Este repositorio ya contiene proyectos en funcionamiento. Antes de crear

@@ -144,13 +144,16 @@ growing, something that belongs in a workspace has drifted up.
 
 The prompts above assume an empty repository. In one that already holds
 working projects, run the session as an adaptation, not a build. Start
-from a clean working tree on a disposable branch. Before copying
-anything, check whether `templates/`, `CLAUDE.md`, or `MAINTENANCE.md`
-already exist; if any does, decide now whether it is merged or the new
-material goes under a different name, and do not overwrite it. Then copy
-the same three template files from Step 1 into `templates/` (or the
-folder name you chose). Paste this paragraph before Prompt One, and again
-before Prompt Two:
+from a clean working tree on a disposable branch. Two rules bind from
+here whether or not you paste the paragraph below: nothing is created,
+copied, or changed in this repository until you have approved that path by
+name, and nothing is pushed until you say so. Before copying anything,
+check whether `templates/`, `CLAUDE.md`, or `MAINTENANCE.md` already
+exist; if any does, decide now whether it is merged or the new material
+goes under a different name, and do not overwrite it. Then, with your
+approval, copy the same three template files from Step 1 into `templates/`
+(or the folder name you chose). Paste this paragraph before Prompt One,
+and again before Prompt Two:
 
 ```
 This repository already contains working projects. Before creating
