@@ -67,8 +67,8 @@ domains of work I want to run here (start with one or two), who I am, and
 what my honesty non-negotiables are. Then create: (1) a root CLAUDE.md
 that loads every session, carrying only the always-true rules - git is the
 source of truth, commit every session and push whenever a remote is
-configured, validate the approach with
-me before building anything, present every open decision in a numbered
+configured unless I have told you that pushing needs my go each time,
+validate the approach with me before building anything, present every open decision in a numbered
 "Waiting on you" block at the end of your responses, never state a
 vendor, version, price, or time-dependent fact from memory without live
 verification, and when I correct an error, propose a catch-register row

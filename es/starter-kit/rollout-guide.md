@@ -77,7 +77,8 @@ la vez: qué dominios de trabajo quiero ejecutar aquí (comenzando con uno
 o dos), quién soy y cuáles son mis innegociables de honestidad. Después
 cree: (1) un CLAUDE.md raíz que se cargue en cada sesión y que lleve solo
 las reglas siempre verdaderas: que git es la fuente de la verdad, que
-haga commit en cada sesión y push siempre que haya un remoto configurado,
+haga commit en cada sesión y push siempre que haya un remoto configurado
+salvo que yo le haya dicho que el push requiere mi autorización cada vez,
 que valide el enfoque conmigo antes de construir cualquier cosa, que
 presente cada decisión abierta en un bloque numerado "Pendientes de
 usted" al final de sus respuestas, que nunca afirme de memoria un dato de
