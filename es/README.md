@@ -63,22 +63,41 @@ garantía; la tesis lleva el registro más completo, fallas incluidas.
 
 ## Si me postulé a un puesto en su organización, lea esto primero
 
-Esta es la traducción a términos de contratación. Este repositorio es un
-programa de seguridad aplicado a la IA. Doctrina escrita y gobernanza.
-Controles en capas de distintos tipos, diseñados para que ninguna falla
-individual sea silenciosa. Segregación de funciones en la revisión entre
-proveedores, donde ningún implementador audita su propio trabajo.
-Resultados medibles con líneas base honestamente vergonzosas, publicadas
-a propósito. Un protocolo de auditoría entre proveedores. Un manejo de
-fallas documentado que convierte cada incidente en un control. Esa es la
-misma disciplina que he ejercido en operaciones de seguridad y respuesta
-a incidentes durante casi dos décadas, apuntada ahora a una nueva clase
-de sistema. El trabajo que gobierna abarca implementación técnica, marcos
-de negocio y ejecución de cumplimiento, y las mismas compuertas están
-construidas para gobernar el diseño técnico. Si su puesto implica adoptar
-IA de forma segura, construir o dirigir programas de seguridad, o hacer
-medibles las operaciones, este repositorio es una muestra de trabajo, no
-una afirmación.
+Dirigí operaciones de seguridad y respuesta a incidentes durante casi dos
+décadas. Este repositorio es esa misma disciplina aplicada a una IA, y está
+construido para que se verifique, no para que se crea. Cuatro cosas que
+comprobar, cada una con dónde buscarla.
+
+1. Las reglas están escritas y un humano firma cada una. La tesis, sección
+   2, muestra los archivos de instrucciones en capas y la doctrina bajo la
+   que opera cada dominio.
+2. Ningún implementador audita su propio trabajo, y el escrutinio escala
+   con el riesgo. El modelo de un segundo proveedor revisa lo que construye
+   el primero bajo un
+   [protocolo de revisión adversarial](starter-kit/adversarial-review-protocol.md)
+   escrito; cada respuesta sustantiva pasa por una compuerta de
+   verificación escalonada por riesgo y el trabajo de alto riesgo recibe la
+   pila completa (tesis, sección 4). Los registros pasada por pasada
+   permanecen en el repositorio privado y están disponibles como un
+   recorrido en vivo.
+3. Cada corrección se convierte en un control. Cada atrapada (un error
+   detectado por el humano) recibe una fila en el registro, emparejada con
+   la regla que previene la clase. El registro es privado; su crecimiento
+   es público: 21 filas en la primera publicación, 53 a principios de
+   agosto (tesis, sección 9).
+4. Los números se publican aunque avergüencen. La primera lectura mensual
+   del tablero de calificación salió en agosto de 2026 con el humano
+   todavía atrapando la mayoría de las fallas primero (tesis, sección 7).
+
+El marco es el mismo ya sea que el entregable sea una línea base de
+endurecimiento de un tenant, un modelo de precios o un rastreador de
+cumplimiento cuyos pesos de control verificó contra la fuente oficial de
+puntuación; lo que cambia es el escrutinio, que sigue al riesgo (tesis,
+sección 2). Si su puesto implica adoptar o gobernar IA de forma segura,
+construir o dirigir un programa de seguridad, o hacer medibles las
+operaciones, esto es una muestra de trabajo. Lo que no puede mostrar es la
+escala, los equipos y los incidentes detrás de las dos décadas; eso está en
+el perfil de LinkedIn al final de esta página.
 
 ## Lea en este orden
 

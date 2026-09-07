@@ -52,21 +52,36 @@ not a warranty; the thesis carries the fuller record, failures included.
 
 ## If I applied to a role with you, read this first
 
-Here is the translation into hiring terms. This repository is a security
-program applied to AI. Written doctrine and governance. Layered controls
-of different kinds, designed so no single failure is silent. Separation of
-duties in the cross-vendor review, where no implementer audits its own
-work. Measurable outcomes with honestly
-embarrassing baselines published on purpose. A cross-vendor audit protocol.
-Documented failure handling that turns every incident into a control. That
-is the same discipline I have run in security operations and incident
-response for nearly two decades, pointed at a new class of system. The
-work it governs spans technical implementation, business frameworks, and
-compliance execution, and the same gates are built to govern technical
-design. If your role
-involves adopting AI safely, building or running security programs, or
-making operations measurable, this repository is a working sample, not a
-claim.
+I ran security operations and incident response for nearly two decades.
+This repository is that discipline applied to an AI, and it is built to be
+checked rather than believed. Four things to check, each with where to
+look.
+
+1. The rules are written and a human signs every one. The thesis, section
+   2, shows the layered instruction files and the doctrine each domain runs
+   under.
+2. No implementer audits its own work, and scrutiny scales with risk. A
+   second vendor's model reviews what the first one builds under a written
+   [adversarial review protocol](starter-kit/adversarial-review-protocol.md);
+   every substantive answer passes a risk-tiered gate and high-stakes work
+   gets the full stack (thesis, section 4). The pass-by-pass records stay in
+   the private repository and are available as a walkthrough.
+3. Every correction becomes a control. Each catch gets a register row
+   paired with the rule that prevents the class. The register is private;
+   its growth is public: 21 rows at first publication, 53 by early August
+   (thesis, section 9).
+4. The numbers publish even when they embarrass. The first monthly
+   scorecard reading went out in August 2026 with the human still catching
+   most flaws first (thesis, section 7).
+
+The frame is the same whether the deliverable is a tenant hardening
+baseline, a pricing model, or a compliance tracker whose control weights it
+checked against the official scoring source; what changes is the scrutiny,
+which follows the risk (thesis, section 2). If your role involves adopting
+or governing AI safely, building or running a security program, or making
+operations measurable, this is a working sample. What it cannot show is
+scale, the teams and incidents behind the two decades; that is on the
+LinkedIn profile at the end of this page.
 
 ## Read in this order
 
