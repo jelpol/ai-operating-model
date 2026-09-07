@@ -78,8 +78,8 @@ claim.
 3. **[The starter kit](starter-kit/)**. The nine-part skeleton, the
    workspace loader, the intake protocol, and the cross-vendor
    adversarial review protocol as reusable templates, with a guided
-   rollout that stands the framework up in one session. MIT
-   licensed. Take them.
+   rollout that stands up the foundation and a first workspace in one
+   session and says what comes after. MIT licensed. Take them.
 4. **[The resume tailoring kit](resume-tailoring-kit/)**. The job-search
    domain exported whole: the fifteen-module tailoring pipeline, the fact
    registry that keeps the AI honest, and a guided first session, sanitized
@@ -92,6 +92,12 @@ claim.
 6. **[The prior-art survey](prior-art-survey.md)**. Where this sits among
    published practice, every source verified live, credit where ideas were
    borrowed.
+
+If you came to adopt the starter kit rather than to read: open
+[starter-kit/rollout-guide.md](starter-kit/rollout-guide.md) first and run
+it with your AI. The reading order above is for understanding the system;
+the guide is for standing one up. This repository is documentation, not a
+system, so opening it in Claude Code sets nothing up by itself.
 
 ## The honest fine print
 

@@ -1,16 +1,21 @@
 # Starter kit
 
+Start here: `rollout-guide.md`. Everything else in this folder is what
+that guide uses.
+
 Reusable, sanitized templates from the operating model described in the
 thesis. Take them, adapt them, keep the honesty rules intact. The
 templates are MIT; the rollout guide's prose, like the other written
 works in this repository, is CC BY 4.0. Templates current as of thesis
-version 4, 2026-08-02.
+version 4, 2026-08-02. Harness behaviors checked against the Claude Code
+documentation: see the harness check paragraph in the rollout guide for
+the date and version.
 
 Contents.
 
-- `rollout-guide.md`. Start here. Step-by-step instructions and three
-  copy-paste prompts that stand the whole framework up in one guided
-  session.
+- `rollout-guide.md`. Step-by-step instructions and three copy-paste
+  prompts that stand up the foundation and your first workspace in one
+  guided session, then say what comes after and when.
 - `skeleton-template.md`. The nine-part frame every workspace is built
   from. Start any new AI-managed domain of work by filling this in.
 - `workspace-loader-template.md`. The thin on-demand loader file that
@@ -32,7 +37,8 @@ every workspace shares them.
 
 Scope, stated plainly. The templates as delivered target Claude Code,
 which supplies folder-triggered context loading, file imports, and custom
-commands; porting to another harness needs equivalents of those three.
+commands (skills, in current Claude Code); porting to another harness
+needs equivalents of those three.
 And the skeleton governs how AI work is produced and verified. It does not
 supply threat modeling, data classification, secrets handling, access
 control, incident response, backup testing, retention and deletion rules,

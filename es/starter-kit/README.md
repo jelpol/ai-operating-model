@@ -1,20 +1,27 @@
 # Kit de inicio
 
-*Edición en español (México), traducida de la versión inglesa en el commit 40494f3. La versión en inglés es la canónica.*
+*Edición en español (México), traducida de la versión inglesa: el commit 40494f3 y la revisión inglesa del 2026-09-06, que se publica en el mismo commit que esta traducción. La versión en inglés es la canónica.*
+
+Comience aquí: `rollout-guide.md`. Todo lo demás en esta carpeta es lo
+que esa guía utiliza.
 
 Plantillas reutilizables y depuradas del modelo operativo descrito en la
 tesis. Tómelas, adáptelas y mantenga intactas las reglas de honestidad.
 Las plantillas son MIT; la prosa de la guía de implementación, como las
 demás obras escritas de este repositorio, es CC BY 4.0. Plantillas
-vigentes a la versión 4 de la tesis, 2026-08-02.
+vigentes a la versión 4 de la tesis, 2026-08-02. Comportamientos del
+entorno de ejecución (harness) cotejados contra la documentación de
+Claude Code: vea el párrafo de verificación del harness en la guía de
+implementación para la fecha y la versión.
 
 Contenido.
 
-- `rollout-guide.md`. Comience aquí. Instrucciones paso a paso y tres
-  prompts para copiar y pegar que levantan el marco completo en una sola
-  sesión guiada.
+- `rollout-guide.md`. Instrucciones paso a paso y tres prompts para
+  copiar y pegar que levantan los cimientos y su primer espacio de
+  trabajo (workspace) en una sola sesión guiada, y después dicen qué
+  viene y cuándo.
 - `skeleton-template.md`. El marco de nueve partes con el que se
-  construye cada espacio de trabajo (workspace). Comience cualquier nuevo
+  construye cada workspace. Comience cualquier nuevo
   dominio de trabajo administrado por IA llenando esta plantilla.
 - `workspace-loader-template.md`. El delgado archivo cargador bajo
   demanda que hace que un workspace se cargue por sí solo sin inflar el
@@ -39,8 +46,9 @@ las comparten.
 
 El alcance, dicho con claridad. Las plantillas, tal como se entregan,
 están dirigidas a Claude Code, que proporciona carga de contexto activada
-por carpeta, importación de archivos y comandos personalizados; portarlas
-a otro entorno de ejecución (harness) requiere equivalentes de esas tres capacidades. Y el
+por carpeta, importación de archivos y comandos personalizados (skills,
+en el Claude Code actual); portarlas a otro entorno de ejecución
+(harness) requiere equivalentes de esas tres capacidades. Y el
 esqueleto rige cómo se produce y se verifica el trabajo con IA. No
 proporciona modelado de amenazas, clasificación de datos, manejo de
 secretos, control de acceso, respuesta a incidentes, pruebas de

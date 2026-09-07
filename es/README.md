@@ -90,11 +90,18 @@ una afirmación.
 3. **[El kit de inicio](starter-kit/)**. El esqueleto de nueve partes, el
    cargador de espacio de trabajo (workspace), el protocolo de ingesta y
    el protocolo de revisión adversarial entre proveedores como plantillas
-   reutilizables, con una implementación guiada que pone en pie el marco
-   en una sola sesión. Licencia MIT. Tómelas.
+   reutilizables, con una implementación guiada que pone en pie los
+   cimientos y un primer workspace en una sola sesión y dice qué viene
+   después. Licencia MIT. Tómelas.
 4. **[El estudio de trabajos previos](prior-art-survey.md)**. Dónde se
    ubica esto dentro de la práctica publicada, cada fuente verificada en
    vivo, con crédito donde se tomaron ideas prestadas.
+
+Si vino a adoptar el kit de inicio y no a leer: abra primero
+[starter-kit/rollout-guide.md](starter-kit/rollout-guide.md) y ejecútelo
+con su IA. El orden de lectura de arriba sirve para entender el sistema;
+la guía sirve para levantar uno. Este repositorio es documentación, no un
+sistema, así que abrirlo en Claude Code no configura nada por sí solo.
 
 ## La letra pequeña honesta
 
