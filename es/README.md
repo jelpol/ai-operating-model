@@ -1,6 +1,6 @@
 # Operar una IA
 
-*Edición en español (México), traducida de la versión inglesa: el commit 40494f3 y las revisiones inglesas del 2026-09-06 (sección de contratación, ruta de adopción), publicadas en el mismo commit que esta traducción. La versión en inglés es la canónica.*
+*Edición en español (México), traducida de la versión inglesa: el commit 40494f3 y las revisiones inglesas del 2026-09-06 (sección de contratación, ruta de adopción), publicadas en el mismo commit que esta traducción; nota sobre los kits pendientes añadida el 2026-09-08. La versión en inglés es la canónica.*
 
 **Read this documentation in English: [../README.md](../README.md)**
 
@@ -115,6 +115,12 @@ el perfil de LinkedIn al final de esta página.
 4. **[El estudio de trabajos previos](prior-art-survey.md)**. Dónde se
    ubica esto dentro de la práctica publicada, cada fuente verificada en
    vivo, con crédito donde se tomaron ideas prestadas.
+
+Dos kits más existen solo en inglés por ahora: el kit de adaptación de
+currículum (resume-tailoring-kit/) y el kit de asesoría técnica
+(technical-advisory-kit/), ambos publicados el 2026-08-06. Esta edición los
+nombra para no ocultar la brecha; su edición en español está en preparación
+y esta nota se retirará cuando se publique.
 
 Si vino a adoptar el kit de inicio y no a leer: abra primero
 [starter-kit/rollout-guide.md](starter-kit/rollout-guide.md) y ejecútelo
