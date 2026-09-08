@@ -8,7 +8,7 @@
 ## What this module does
 Maps a target company / role to your professional network, classifies connection strength, and recommends a warm-intro / hybrid / cold submission track. For warm or hybrid tracks, drafts initial outreach and sequences follow-through. Updates the network registry through Module 12 closeout. (A standing network registry is OPTIONAL - it becomes useful once you are juggling multiple applications.)
 
-## Strategy Gate requirements (all four are WORK-PRODUCT requirements, not checkboxes)
+## Strategy Gate requirements (all five are WORK-PRODUCT requirements, not checkboxes)
 1. **Gate placement:** runs inside the Strategy Gate before any A-tier build; its track output is a line on the gate decision card.
 2. **Cold + stretch pursuit requires your explicit call with the card's SINGLE timebox** - a decision to spend N hours, not an open-ended build.
 3. **Hybrid targets get a short outreach artifact** drafted before or alongside the package (the light-touch message this module defines) - the artifact is part of the deliverable set, recorded in the manifest.

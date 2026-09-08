@@ -1,0 +1,67 @@
+{
+  "schema_version": "starter-1.0",
+  "_instructions": "Copie este archivo a my-data/fact_registry.json y llénelo, idealmente ejecutando prompts/03_proactive_interrogation.md en un chat de IA. Toda afirmación del currículum debe rastrearse hasta un hecho de este archivo. Elimine estas líneas _instructions conforme avance. Mantenga este archivo PRIVADO.",
+  "owner": "[SU NOMBRE COMPLETO]",
+  "last_updated": "[YYYY-MM-DD]",
+  "identity": {
+    "full_name": "[SU NOMBRE COMPLETO]",
+    "city_state": "[CIUDAD, ESTADO]",
+    "phone": "[TELÉFONO]",
+    "email": "[CORREO ELECTRÓNICO]",
+    "linkedin": "[URL o vacío]",
+    "headline_credential": "[Opcional: una línea para una habilitación de seguridad vigente o una certificación destacada, si la tiene. De lo contrario, vacío.]"
+  },
+  "career_thesis": {
+    "_instructions": "Resuma a partir de su career_thesis_template.md ya llenado. 2 o 3 rutas de destino.",
+    "paths": [
+      { "id": "A", "name": "[p. ej. Trayectoria de liderazgo de personas en su campo]" },
+      { "id": "B", "name": "[p. ej. Trayectoria de contribuidor individual sénior / especialista]" }
+    ]
+  },
+  "roles": [
+    {
+      "employer": "[Nombre de la empresa]",
+      "title": "[Título exacto según los registros]",
+      "start": "[YYYY-MM]",
+      "end": "[YYYY-MM o presente]",
+      "scope": {
+        "team_size": "[número de personas que dirigió o con las que trabajó, o desconocido]",
+        "budget": "[monto que estuvo bajo su responsabilidad o en el que influyó, o ninguno]",
+        "customers_or_users": "[a quién sirvió su trabajo, con números si los conoce]"
+      },
+      "facts": [
+        {
+          "id": "example-fact-1",
+          "claim": "[Una afirmación verdadera sobre lo que USTED hizo, en sus propias palabras. p. ej. Migré 40 tiendas a un nuevo sistema de punto de venta en 6 meses con cero días de ventas perdidas.]",
+          "evidence": "[Cómo sabe los números: informe, correo, recuerdo del plan del proyecto.]",
+          "source": "confirmed_by_user",
+          "_source_options": "confirmed_by_user | source_resume | walk_through - el módulo de verificación de hechos (07) solo acepta afirmaciones que se rastrean hasta uno de estos",
+          "quantified": true
+        }
+      ]
+    }
+  ],
+  "skills_and_tools": [
+    "[Herramientas, plataformas y métodos que realmente ha usado. Una entrada por cada uno.]"
+  ],
+  "certifications_education": [
+    {
+      "name": "[Título académico o certificación, exactamente como se emitió]",
+      "issuer": "[Institución u organismo]",
+      "year": "[YYYY]",
+      "status": "[active (vigente) | expired (vencido) | in progress (en curso)]"
+    }
+  ],
+  "metrics_bank": [
+    "[Cifras independientes que puede defender: porcentajes de mejora, dinero ahorrado, volúmenes atendidos, número de personas, plazos.]"
+  ],
+  "locked_framings": [
+    "[Formulaciones que usted ya decidió y que no permitirá que la IA cambie. p. ej. cómo describe un despido, una brecha laboral o un título que se quedó corto frente al trabajo. Agréguelas conforme las sesiones las saquen a la luz.]"
+  ],
+  "do_not_claim": [
+    "[Cosas adyacentes a su trabajo que usted NO hizo. Listarlas aquí evita que la IA derive hacia ellas. p. ej. 'Apoyé el proceso presupuestal, pero nunca tuve un presupuesto a mi cargo.']"
+  ],
+  "lessons_learned": [
+    "[Lista opcional en curso: qué funcionó y qué falló en postulaciones pasadas, formulaciones que funcionaron, peculiaridades de portales que encontró.]"
+  ]
+}
