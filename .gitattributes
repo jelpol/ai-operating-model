@@ -1,0 +1,5 @@
+# The repository is text throughout: Markdown, JSON, YAML, HTML, licences.
+# Normalise every file to LF in the index and check it out as LF, so a
+# checkout on Windows cannot report a file as modified when only its line
+# endings differ from what core.autocrlf would have written.
+* text=auto eol=lf
